@@ -47,12 +47,10 @@ function Login() {
       <Form className={ styles.form }>
         <Form.Group controlId="formBasicEmail">
           <Form.Label
-            htmlFor="emailInput"
           />
           <Form.Control
             type="email"
             placeholder="Email"
-            id="emailInput"
             data-testid="email-input"
             name="emailInput"
             onChange={ handleInputChange }
@@ -61,13 +59,11 @@ function Login() {
 
         <Form.Group controlId="formBasicPassword">
           <Form.Label
-            htmlFor="passwordInput"
           />
           <Form.Control
-            placeholder="Senha"
+            placeholder="Senha com 7 ou mais dígitos"
             type="password"
             data-testid="password-input"
-            id="passwordInput"
             name="passwordInput"
             onChange={ handleInputChange }
           />

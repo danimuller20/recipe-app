@@ -14,7 +14,7 @@ function categoryFoodButton(handleClickButtonName, meal) {
           <div className="categoty-btn">
             <Dropdown.Item
               href="#/action-index"
-              key={ strCategory }
+              key={ Math.random() }
               type="button"
               name={ strCategory }
               data-testid={ `${strCategory}-category-filter` }

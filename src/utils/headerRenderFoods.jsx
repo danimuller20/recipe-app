@@ -24,7 +24,7 @@ function headerRenderFoods({
       .map(({ idMeal, strMealThumb, strMeal }, index) => (
         index < twelve && (
           <RecipeCard
-            key={ idMeal }
+            key={ Math.random() }
             image={ strMealThumb }
             name={ strMeal }
             recipeCArdId={ `${index}-recipe-card` }

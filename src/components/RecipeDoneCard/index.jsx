@@ -14,11 +14,11 @@ function RecipeDoneCard(
     type, doneDate, shouldFavorite, alcoholicOrNot },
 ) {
   const [copyUrl, handleClickUrl] = useHandleClickUrl();
-
+  
   let url = window.location.href;
-  if (url === 'http://localhost:3000/receitas-favoritas') {
+  if (url.includes('receitas-favoritas')) {
     url = url.replace('receitas-favoritas', `${type}s/${id}`);
-  } else if (url === 'http://localhost:3000/receitas-feitas') {
+  } else if (url.includes('receitas-feitas')) {
     url = url.replace('receitas-feitas', `${type}s/${id}`);
   }
 
@@ -93,11 +93,13 @@ function RecipeDoneCard(
             {item}
           </p>
         )) }
+        {!shouldFavorite && (
         <p
           data-testid={ `${index}-horizontal-done-date` }
         >
           {`Feita em: ${doneDate}`}
         </p>
+        )}
       </Media.Body>
     </Media>
   );
