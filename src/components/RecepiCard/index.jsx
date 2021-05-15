@@ -23,10 +23,11 @@ function RecipeCard({
             alt={ name }
             type={ type }
           />
-          <Card.Body>
+          <Card.Body style={{ padding: ' 5px 20px 0 20px '}}>
             <Button
               variant="outline-success"
-              style={ { height: '2rem', width: '100%', overflow: 'hidden' } }
+              style={ { height: 'auto', width: '170px', marginLeft: '-35px', 
+              overflow: 'hidden', border: 'none'} }
             >
               <Card.Title
                 style={ { textDecoration: 'none', fontSize: '1rem' } }
