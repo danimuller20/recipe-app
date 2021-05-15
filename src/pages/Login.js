@@ -43,8 +43,10 @@ function Login() {
 
   return (
     <div className={ styles.formContainer }>
-      <h1>Login</h1>
       <Form className={ styles.form }>
+      <h1>APP de receitas</h1>
+      <hr></hr>
+      <h2>Login</h2>
         <Form.Group controlId="formBasicEmail">
           <Form.Label
           />
